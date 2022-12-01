@@ -17,7 +17,7 @@ public class TransactionController {
 
     private final TransactionService transactionService;
 
-    @GetMapping("/{id}")
+    @PostMapping("/{id}")
     public TransactionResponse subtractPayment(@PathVariable Long id){
         return transactionService.createTransactions(id);
     }
